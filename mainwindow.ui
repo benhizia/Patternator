@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>1066</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>221</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Choose design pattern ...</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Adapter</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bridge</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select the design pattern</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Problem to solve</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>430</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Solution (changes to do):</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_Problem">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>1171</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_Console">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>800</y>
+      <width>1171</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>430</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Run Example</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_AdapterProblem">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#808000;&quot;&gt;namespace&lt;/span&gt;&lt;span style=&quot; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:8pt; color:#800080;&quot;&gt;Patterns&lt;/span&gt;&lt;span style=&quot; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;namespace&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;Adapter&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;IClientServices&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;virtual&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; font-style:italic; color:#000000;&quot;&gt;AdaptableOperation&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;};&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_BridgeData">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>10</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;Bridge data&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; font-style:italic;&quot;&gt;aze&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; font-weight:600; font-style:italic;&quot;&gt;azeazeaze&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:18pt; font-weight:600; font-style:italic;&quot;&gt;azeaze&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:18pt; font-weight:600; font-style:italic; text-decoration: underline;&quot;&gt;aze&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_Solution">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>1171</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="tBrowser_AdapterSolution">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#000080;&quot;&gt;/**&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#0000ff;&quot;&gt;@brief&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;The&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;Client&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;Wants/can&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;only&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;execute&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;operation&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;from&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;IClientServices&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;interface&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*/&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;Client&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;Client&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;IClientServices&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;adaptable_object)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptable_object&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;adaptable_object;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;~&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;Client&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;IAlwaysCallThisMethodButWantItToBeAdaptedExternally(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;MainWindow&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;qout&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;This&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;Must&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;Do&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;different&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;Things&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;According&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;To&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;adaptable&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;object&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;supplied&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;endl&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptable_object&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; font-style:italic; color:#000000;&quot;&gt;AdaptableOperation&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;();&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;private&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;IClientServices&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptable_object&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;};&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;/**&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#0000ff;&quot;&gt;@brief&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;The&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;ThingToAdaptTo&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;class&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;is&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;that&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;can't&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;be&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;changed&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;it&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;has&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;signature&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;that&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;can't&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;be&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;used&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;by&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;our&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;client&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;straightforwardly&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;(like&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;from&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;a&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;compiled&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;API&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;or&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;sensitiv&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;code)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000080;&quot;&gt;*/&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;ThingToAdaptTo&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;NeededOperation()&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;MainWindow&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;qout&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;NeededOperation()&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;Success&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;!&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;we&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;adapted&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;our&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;client's&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;inteface&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;to&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;ThingToAdaptTo&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;object&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;though&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;Adapter&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;object&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;endl&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;MainWindow&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;qout&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;NeededOperation()&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;this&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;code&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;can't&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;be&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;changed&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;we&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;need&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;to&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;call&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;it&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;from&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;client&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;endl&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;MainWindow&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;qout&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;NeededOperation()&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;but&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;the&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;client&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;can't&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;be&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;changed&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;and&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;needs&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;to&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;call&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;this&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;method&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;through&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;an&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;already&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;existing&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;interface&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;endl&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;};&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;class&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;ConcreteAdapter&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;IClientServices&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;public&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;ConcreteAdapter&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;ThingToAdaptTo&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;thing_to_adapt)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptee&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;thing_to_adapt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; font-style:italic; color:#000000;&quot;&gt;AdaptableOperation&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;{&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;MainWindow&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;qout&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;AdaptableOperation()&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;ConcreteAdapter's&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;AdaptableOperation()&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;call&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#008000;&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;endl&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptee&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;-&amp;gt;NeededOperation();&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;}&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#808000;&quot;&gt;private&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800080;&quot;&gt;ThingToAdaptTo&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#c0c0c0;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#800000;&quot;&gt;_adaptee&lt;/span&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Courier New,courier'; font-size:8pt; color:#000000;&quot;&gt;};&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New,courier'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>90</y>
+      <width>201</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Pattern Familly</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>Strutural (7)</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Adapter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bridge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Composit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Decorator</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Facade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Flyweight</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Proxy</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>Behavioral (11)</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Chain of Responsibility</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Command</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Interpreter</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Iterator</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mediator</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Memento</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Observer</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>State</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Strategy</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Template Method</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Visitor</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string> Creational (5)</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Abstract Factory</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Builder</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Factory Method</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Prototype</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Singlton</string>
+      </property>
+     </item>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
